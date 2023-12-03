@@ -1,9 +1,7 @@
-function getComputerChoice () {
-  let random = Math.floor(Math.random() * 98 + 1); // range 1 to 99
+let choices = ["rock", "paper", "scissors"];
 
-  if (random < 34)      return "rock";
-  else if (random < 67) return "paper";
-  else                  return "scissors";
+function getComputerChoice () {
+  return choices[Math.floor(Math.random() * choices.length)]; 
 }
 
 function playSingleRound() {
