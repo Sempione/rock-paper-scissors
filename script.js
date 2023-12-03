@@ -13,7 +13,7 @@ function playSingleRound() {
     while (true) { // user input. repeat as long as it is invalid.
       playerSelection = prompt("Your choice: ");
       playerSelection = playerSelection.toLowerCase().trim();
-      if (["rock", "paper", "scissors"].includes(playerSelection)) break;
+      if (choices.includes(playerSelection)) break;
       else console.log("Invalid input.");
     }
 
